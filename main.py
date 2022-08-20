@@ -17,6 +17,7 @@ from flask_ckeditor import CKEditor, CKEditorField
 from sqlalchemy import Table, Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
+import email_validator
 
 Base = declarative_base()
 app = Flask(__name__)
